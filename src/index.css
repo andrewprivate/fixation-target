@@ -1,0 +1,191 @@
+/* index.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Instructions Section */
+#instructions {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#instructions h1 {
+  font-size: 2em;
+  color: #e74c3c;
+}
+
+/* Fixation Preview */
+#fixation-preview {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #dcdfe3;
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.target {
+  position: absolute;
+
+  width: 240px;
+  height: 240px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.target svg {
+  width: 100%;
+  height: 100%;
+}
+
+.device-box {
+  position: absolute;
+
+  border: 1px solid #dcdfe3;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+
+/* Controls Section */
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+/* Gamepad Styles */
+.gamepad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 10px;
+  margin: 20px;
+}
+
+.gamepad-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1em;
+}
+
+.gamepad-button:hover {
+  background-color: #45a049;
+}
+
+#gamepad-up {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#gamepad-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#gamepad-right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#gamepad-down {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#gamepad-reset {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Input Controls */
+.input-with-decrement-increment,
+.target-icon,
+.color-input,
+.inter-eye-distance {
+  display: grid;
+  margin: 5px 20px;
+  gap: 4px;
+  grid-template-columns: 150px 30px 30px auto;
+  align-items: center;
+}
+
+.input-with-decrement-increment label,
+.target-icon label,
+.color-input label,
+.inter-eye-distance label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.input-with-decrement-increment input,
+.inter-eye-distance input {
+  width: 70px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.input-with-decrement-increment button,
+.inter-eye-distance button {
+  width: 30px;
+  height: 30px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-with-decrement-increment button:hover,
+.inter-eye-distance button:hover {
+  background-color: #1976d2;
+}
+
+.target-icon select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  grid-column: 2 / 5;
+}
+
+.color-input input {
+  grid-column: 2 / 5;
+  width: 100%;
+}
+.color-input input::-webkit-color-swatch-wrapper {
+  padding: 0; 
+}
+
+.right-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

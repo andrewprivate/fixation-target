@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 48">
+    <g>
+        <use transform="translate(0,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(24,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(48,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(72,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(96,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(120,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(144,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(168,0)" href="#rect" width="24" height="24" />
+        <use transform="translate(192,0)" href="#rect" width="24" height="24" />
+
+
+        <use transform="translate(0,0)" href="#circle" width="24" height="24" />
+        <use transform="translate(24,0)" href="#cross" width="24" height="24" />
+
+        <use transform="translate(48,0)" href="#square" width="24" height="24" />
+        <use transform="translate(72,0)" href="#triangle" width="24" height="24" />
+
+        
+    </g>
+    <defs>
+        <symbol id="circle" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="2" stroke-width="2.5" />
+        </symbol>
+
+        <symbol id="cross" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="10" y="0" width="4" height="24" stroke-width="2.5" />
+            <rect x="0" y="10" width="24" height="4" stroke-width="2.5" />
+        </symbol>
+
+        <symbol id="square" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="10" y="10" width="4" height="4" stroke-width="2.5" />
+        </symbol>
+
+        <symbol id="triangle" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,22 2,22" stroke-width="2.5" />
+        </symbol>        
+    </defs>
+</svg>

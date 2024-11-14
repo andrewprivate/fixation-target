@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dual Eye Fixation Target</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <div id="instructions">
+    <h1>Server not running!</h1>
+  </div>
+
+  <div id="qrcode-holder">
+    <!-- Shows the QR code for the server URL. -->
+    <img id="qrcode" />
+  </div>
+
+  <div id="fixation-preview">
+    <!-- Shows the fixation target as it would appear to the user. -->
+  </div>
+
+  <div id="controls">
+    <div class="gamepad">
+      <div class="gamepad-button" id="gamepad-up">Up</div>
+      <div class="gamepad-button" id="gamepad-left">Left</div>
+      <div class="gamepad-button" id="gamepad-right">Right</div>
+      <div class="gamepad-button" id="gamepad-down">Down</div>
+      <div class="gamepad-button" id="gamepad-reset">Reset</div>
+    </div>
+    <div class="right-controls">
+
+
+      <div class="step-size input-with-decrement-increment">
+        <label for="step-size">Step Size</label>
+        <button id="step-size-decrement">-</button>
+        <button id="step-size-increment">+</button>
+        <input type="number" id="step-size" value="1" />
+      </div>
+      <div class="inter-eye-distance">
+        <label for="inter-eye-distance">Inter Eye Distance</label>
+        <button id="inter-eye-distance-decrement">-</button>
+        <button id="inter-eye-distance-increment">+</button>
+        <input type="number" id="inter-eye-distance" value="0.5" />
+      </div>
+      <div class="target-size input-with-decrement-increment">
+        <label for="target-size">Target Size</label>
+        <button id="target-size-decrement">-</button>
+        <button id="target-size-increment">+</button>
+        <input type="number" id="target-size" value="1" />
+      </div>
+      <div class="target-icon">
+        <label for="target-icon">Target Icon</label>
+        <select id="target-icon">
+          <option value="circle">Circle</option>
+          <option value="cross">Cross</option>
+          <option value="square">Square</option>
+          <option value="triangle">Triangle</option>
+        </select>
+      </div>
+      <div class="color-input">
+        <label for="color">Target Color</label>
+        <input type="color" id="color" value="#ff0000" />
+      </div>
+      <div class="color-input">
+        <label for="background-color">Background Color</label>
+        <input type="color" id="background-color" value="#FFFFFF" />
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
