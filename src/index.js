@@ -73,7 +73,7 @@ let config = {
   target_size: 0.1,
   target_icon: "cross",
   inter_eye_distance: 0.5,
-  step_size: 1,
+  step_size: 0.05,
   target_positions: [
     { x: 0.25, y: 0.5 },
     { x: 0.75, y: 0.5 },
